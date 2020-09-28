@@ -5,6 +5,7 @@
 		<title></title>
 		<!--如果多个规则与同一个元素匹配，而且有些声明互相冲突时，特殊性越大的越占优势-->
 		<style type="text/css">
+			/* 具有0000的特殊性 */
 			*{
 				margin: 0;
 				padding: 0;
@@ -27,7 +28,7 @@
 		<div id="test" class="test">
 				test
 				<div id="inner">
-					inner
+					inner，没有应用继承过来的color因为0000的特殊性比继承的强
 				</div>
 		</div>
 	</body>
