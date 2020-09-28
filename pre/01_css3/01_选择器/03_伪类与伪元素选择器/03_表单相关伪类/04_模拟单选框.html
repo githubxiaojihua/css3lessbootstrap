@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<!-- 通过表单伪类来自定义单选框样式 -->
+<style>
+	label{ float:left;margin:0 5px; overflow:hidden; position:relative;}
+	label input{ position:absolute;left:-50px;top:-50px;}
+	span{float:left;width:50px;height:50px;border:3px solid #000;}
+	/* 选中的input的相信兄弟的span样式 */
+	input:checked~span {background:red;}
+</style>
+</head>
+<body>
+	<!--通过一个label将radioinput 和span组合起来，点击span的时候radio会被选中
+		可以通过将上面的style去掉来测试
+	-->
+	<label>
+		<input type="radio" name="tab" />
+	    <span></span>
+	</label>
+	<label>
+		<input type="radio" name="tab" />
+	    <span></span>
+	</label>
+	<label>
+		<input type="radio" name="tab" />
+	    <span></span>
+	</label>
+</body>
+</html>
