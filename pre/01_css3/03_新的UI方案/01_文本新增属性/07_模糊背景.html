@@ -2,13 +2,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<!-- 开发移动端必须要有这一句，详细后面教程会说 -->
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
-		<title></title>
+		<title>使用浏览器移动模式打开</title>
 		<style type="text/css">
+			/* 这里的模糊背景并不是直接模糊背景图片,而是模糊了上面的一层div */
 			*{
 				margin: 0;
 				padding: 0;
 			}
+			/* 设置header的position为relative,且bg为absolute并设置其left,top,bottom,right是为了让bg与header一样在 */
 			#header{
 				position: relative;
 				background: rgba(0, 0, 0,.5);
